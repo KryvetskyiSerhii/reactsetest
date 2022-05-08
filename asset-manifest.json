@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/github.io/react-gh-pages/static/css/main.feef4cd5.css",
+    "main.js": "/github.io/react-gh-pages/static/js/main.6fb8774d.js",
+    "static/media/globe.png": "/github.io/react-gh-pages/static/media/globe.31d1c250918c40c681d1.png",
+    "static/media/maginfier.svg": "/github.io/react-gh-pages/static/media/maginfier.6a82005ba048a14fbc82be3c08e9b868.svg",
+    "static/media/close2.svg": "/github.io/react-gh-pages/static/media/close2.d29bbc45289432aada091f295d44b147.svg",
+    "static/media/menu.svg": "/github.io/react-gh-pages/static/media/menu.8c8238f4bf314c4a99f2f524dfbf146e.svg",
+    "index.html": "/github.io/react-gh-pages/index.html",
+    "main.feef4cd5.css.map": "/github.io/react-gh-pages/static/css/main.feef4cd5.css.map",
+    "main.6fb8774d.js.map": "/github.io/react-gh-pages/static/js/main.6fb8774d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.feef4cd5.css",
+    "static/js/main.6fb8774d.js"
+  ]
+}

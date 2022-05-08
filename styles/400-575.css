@@ -1,0 +1,32 @@
+@media (min-width: 300px) and (max-width: 575px) {
+  .header__icon,
+  .header__icon ul {
+    list-style: none;
+  }
+  .header__icon ul {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    left: 0px;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    padding: 40px 0px 10px 5px;
+    width: 200px;
+    background-color: aliceblue;
+    display: none;
+    height: 100vh;
+  }
+  .block__content-img img {
+    width: 100px;
+  }
+  .inform__blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inform__block {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=400-575.css.map */
