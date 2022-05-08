@@ -1,0 +1,173 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$menu-color: bisque;
+
+@media (min-width: 300px) and (max-width: 575px) {
+
+    .blog {
+        width: 600px;
+        grid-template-columns: 4fr 8fr;
+    }
+
+    .news {
+        &ArticleLink:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.blog {
+    display: grid;
+    grid-template-areas: 
+    "side main";
+    grid-template-columns: 2fr 10fr;
+    gap: 2px;
+    max-width: 1200px;
+    &MainPage {
+        grid-area: main;
+        
+
+    }
+    &ArticleItem {
+        margin: 50px auto;
+        text-align: center;
+    }
+  }
+  
+  
+
+.nav {
+    grid-area: side;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    // background-color: $menu-color;
+    background-image: url('http://loveisinmytummy.com/wp-content/uploads/2017/07/New-Blue-Background-Main-2.jpg');
+    padding: 10px;
+   &Logo {
+       margin: -40px;
+   }
+    &Logo img{
+        width: 180px;
+    }
+    &Btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: none;
+        // background-color: $menu-color;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    &Btn:hover {
+        border: 1px solid #fff;
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+    &SearchForm {
+        margin: 15px 0px;
+        display: flex;
+        align-items: center;
+    }
+    &SearchInput {
+      width: 160px;  
+      height: 30px;
+      padding-left: 5px;
+      border-radius: 10px 0px 0px 10px;
+      border: none;
+    }
+    &SearchInput:focus {
+        outline: none;
+    }
+    &GoButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 30px;
+        background-color: #fff;
+        border: none;
+        border-radius: 0px 10px 10px 0px;
+        padding-right: 5px;
+        cursor: pointer;
+    }
+    &GoButton img {
+        width: 20px;
+        opacity: 0.5;
+    }
+    &MenuList {
+        list-style: none;
+        margin: 15px 0px;
+    }
+    &MenuItem:not(:last-child) {
+        margin-bottom: 15px;
+    }
+   
+    &MenuLink {
+        text-decoration: none;
+    }
+}
+
+.news { 
+    padding: 20px;
+    &Blocks {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &ArticleLink {
+        text-decoration: none;
+        color: #000;
+    }
+
+    &ArticleBlock {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        align-items: center;
+        padding: 5px;
+        height: 220px;
+        border: 1px solid #000;
+        border-radius: 15px;
+    }
+    &ArticleBlock img {
+        width: 100px;
+    }
+    &Title {
+        height: 30%;
+    }
+    &Text {
+        padding: 0px 5px;
+        margin: 15px 0px;
+        height: 30%;
+    }
+    &Image {
+        height: 50%;
+    }
+    
+}
+
+
+
+

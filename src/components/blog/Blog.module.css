@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .blog {
+    width: 600px;
+    -ms-grid-columns: 4fr 8fr;
+        grid-template-columns: 4fr 8fr;
+  }
+  .newsArticleLink:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "side main";
+  -ms-grid-columns: 2fr 10fr;
+      grid-template-columns: 2fr 10fr;
+  gap: 2px;
+  max-width: 1200px;
+}
+
+.blogMainPage {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main;
+}
+
+.blogArticleItem {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: side;
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-image: url("http://loveisinmytummy.com/wp-content/uploads/2017/07/New-Blue-Background-Main-2.jpg");
+  padding: 10px;
+}
+
+.navLogo {
+  margin: -40px;
+}
+
+.navLogo img {
+  width: 180px;
+}
+
+.navBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.navBtn:hover {
+  border: 1px solid #fff;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+
+.navSearchForm {
+  margin: 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navSearchInput {
+  width: 160px;
+  height: 30px;
+  padding-left: 5px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+}
+
+.navSearchInput:focus {
+  outline: none;
+}
+
+.navGoButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.navGoButton img {
+  width: 20px;
+  opacity: 0.5;
+}
+
+.navMenuList {
+  list-style: none;
+  margin: 15px 0px;
+}
+
+.navMenuItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.navMenuLink {
+  text-decoration: none;
+}
+
+.news {
+  padding: 20px;
+}
+
+.newsBlocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.newsArticleLink {
+  text-decoration: none;
+  color: #000;
+}
+
+.newsArticleBlock {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  height: 220px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+.newsArticleBlock img {
+  width: 100px;
+}
+
+.newsTitle {
+  height: 30%;
+}
+
+.newsText {
+  padding: 0px 5px;
+  margin: 15px 0px;
+  height: 30%;
+}
+
+.newsImage {
+  height: 50%;
+}
+/*# sourceMappingURL=Blog.module.css.map */

@@ -1,0 +1,46 @@
+@media (min-width: 300px) and (max-width: 575px) {
+  
+    .header {
+        &__icon,
+    &__icon ul {
+        list-style: none;
+
+    }
+
+    &__icon ul {
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        left: 0px;
+        border-top: none;
+        border-radius: 0px 0px 10px 10px;
+        padding: 40px 0px 10px 5px;
+        width: 200px;
+        background-color: aliceblue;
+        display: none;
+        height: 100vh;
+    }
+
+    }
+    
+    .block__content {
+        &-img img {
+            width: 100px;
+        }
+        
+    }
+
+    .inform {
+        &__blocks {
+            flex-direction: column;
+        }
+    
+        &__block {
+           width: 80%;
+        }
+    }
+
+
+
+
+}

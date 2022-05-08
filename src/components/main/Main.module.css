@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .active {
+    position: absolute;
+    height: 100vh;
+    background-color: #fbfbfb;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    padding: 0px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contentBlock:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .infoBlockImg img {
+    width: 150px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+.header {
+  background-image: url("http://loveisinmytummy.com/wp-content/uploads/2017/07/New-Blue-Background-Main-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: bisque;
+  height: 50px;
+  position: relative;
+}
+
+.headerBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.headerBlog {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.headerBlog:hover {
+  border-radius: 10px;
+  color: #ffff;
+  border: 1px solid #ffff;
+  font-weight: 600;
+}
+
+.headerButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  height: 100vh;
+  background-color: #fff;
+  top: 50px;
+  right: 0;
+  width: 200px;
+  padding: 0px 20px;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modalList {
+  list-style: none;
+  padding: 40px 0px;
+}
+
+.modalLink {
+  text-decoration: none;
+  color: #000;
+}
+
+.modalItem:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.modalLink div:hover {
+  opacity: 0.5;
+}
+
+.modalClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.active {
+  position: absolute;
+  height: 100vh;
+  background-color: #fbfbfb;
+  top: 50px;
+  right: 0;
+  width: 200px;
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.search__logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search__logo img {
+  width: 400px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchInput {
+  height: 45px;
+  width: 500px;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #cac6c6;
+  border-right: none;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 45px;
+  padding: 0px 3px;
+  background-color: #fff;
+  border: 1px solid #cac6c6;
+  border-left: none;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+}
+
+.searchButton img {
+  opacity: 0.5;
+}
+
+.info {
+  margin: 50px 0px;
+}
+
+.infoBlocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.infoBlockContent {
+  width: 400px;
+  padding: 20px 30px;
+}
+
+.infoBlockText {
+  margin: 30px 0px;
+}
+
+.infoBlockButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 30px;
+  padding: 0px 10px;
+  background: none;
+  border: 1px solid #cac6c6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.infoBlockButton:hover {
+  background-color: #3198f9;
+  color: #fff;
+}
+
+.infoBlockImg img {
+  max-width: 200px;
+}
+
+.contentBlocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* width: 900px;
+    margin: 0 auto; */
+}
+
+.contentBlock {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #d9f0e9;
+}
+
+.contentBlockText {
+  margin: 15px 0px;
+}
+
+.contentBlockImg img {
+  width: 100px;
+}
+/*# sourceMappingURL=Main.module.css.map */
